@@ -35,8 +35,9 @@ listShapes <- function() {
 #' @export
 defaultPalettePCA3D <- function(n= NULL, transparent= NULL, d3=FALSE) {
 
-  # source: R cookbook, http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#a-colorblind-friendly-palette
-  pal <- "E69F00 56B4E9 009E73 F0E442 0072B2 D55E00 CC79A7 999999 E69F00 56B4E9 009E73 F0E442 0072B2 D55E00 CC79A7"
+  # source: http://www.somersault1824.com/wp-content/uploads/2015/02/color-blindness-palette.png/ 
+  #a-colorblind-friendly-palette
+  pal <- "004949 009292 FF6DB6 FFB677 490092 006DDB B66DFF 6DB6FF B6DBFF 920000 924900 DBD100 24FF24 FFFF6D 000000"
 
   pal <- unlist(strsplit(pal, ' '))
   pal <- paste0("#", pal)
